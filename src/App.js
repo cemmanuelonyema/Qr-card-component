@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Fragment } from "react/cjs/react.production.min";
+import Container from "./component/QrCard";
+import Heading from "./component/Heading";
+import Paragraph from "./component/Paragraph";
+import QrImg from "./component/QrImg";
+import QrCard from "./component/QrCard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="container">
+        <QrCard>
+          <QrImg />
+          <Heading />
+          <Paragraph />
+        </QrCard>
+      </div>
+    </Fragment>
   );
-}
+};
 
 export default App;

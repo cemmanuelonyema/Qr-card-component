@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Output", sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  background-color: var(--Light-gray);
+  height: calc(100vh -1px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.qr-card {
+  background-color: var(--White);
+  /* margin: 2rem; */
+
+  text-align: center;
+  width: 40rem;
+  /* height: 100%; */
+  /* margin: 0 auto; */
+  border-radius: 3rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow);
+  padding: 2rem 2rem 2rem 2rem;
+}
+.qr-heading {
+  color: var(--Dark-blue);
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+}
+qr-para {
+  color: var(--Grayish-blue);
+}
+
+/* .qr-img-box {
+  background-image: url(/public/images/image-qr-code.png);
+  background-size: cover;
+  /* height: 15rem; 
+} */
+
+.qr-img {
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  h1l {
+    /* font-size: 50%; */
+  }
 }
