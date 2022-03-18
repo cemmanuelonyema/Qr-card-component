@@ -1,6 +1,5 @@
 import React from "react";
 import { Fragment } from "react/cjs/react.production.min";
-import Container from "./component/QrCard";
 import Heading from "./component/Heading";
 import Paragraph from "./component/Paragraph";
 import QrImg from "./component/QrImg";
